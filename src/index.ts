@@ -16,4 +16,5 @@ const logLength = parseFloat(logLengthString)
 
 const logAmount = 1100 / (20 * logLength)
 
-console.log(`${logAmount} is the maximum amount of logs.`)
+console.log(`${logAmount} is the maximum amount of ${logLength}m logs.`)
+console.log('\nDone.')
