@@ -9,12 +9,15 @@
 
 import promptSync from 'prompt-sync'
 
+const truckCapacity = 1100
+const mapleWeight = 20
+
 const prompt = promptSync()
 const logLengthString = prompt('How long are the logs in meters : ')
 
 const logLength = parseFloat(logLengthString)
 
-const logAmount = 1100 / (20 * logLength)
+const logAmount = truckCapacity / (mapleWeight * logLength)
 
 console.log(`${logAmount} is the maximum amount of ${logLength}m logs.`)
 console.log('\nDone.')
